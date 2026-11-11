@@ -1,0 +1,11 @@
+services:
+  sample-app:
+    build: ./app
+    container_name: sample-app
+    env_file: .env
+    ports:
+      - "5443:5443"
+    volumes:
+      - ./certs:/certs          # self-signed cert is generated here on first start
+      - ./idp:/idp:ro           # IdP metadata XML downloaded from authentik
+    restart: unless-stopped

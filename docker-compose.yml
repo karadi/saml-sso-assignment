@@ -1,0 +1,10 @@
+# Starts authentik (IdP + dashboard) and the sample SAML app with one command.
+# "name: authentik" keeps the existing authentik volumes (users, groups, config).
+name: authentik
+include:
+  - path: authentik/compose.yml
+    project_directory: authentik
+    env_file: authentik/.env
+  - path: sample-app/docker-compose.yml
+    project_directory: sample-app
+    env_file: sample-app/.env

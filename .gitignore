@@ -1,0 +1,11 @@
+.env
+**/.env
+sample-app/certs/
+*.key
+__pycache__/
+sample-app/tools/captured_response.txt
+sample-app/tools/expired_response.txt
+.DS_Store
+docs/evidence/*.mov
+docs/evidence/*.mov
+docs/evidence/*.mp4
