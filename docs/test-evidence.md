@@ -19,3 +19,13 @@ Save screenshots in `docs/evidence/` using the file names below.
 
 ## Notes
 A response replayed within its validity window is accepted (no replay cache); see docs/limitations.md.
+
+## Recordings
+Screen recordings are too large for the repository and are shared separately:
+https://drive.google.com/drive/folders/15OWkLsbwV3ptZ5bn4Kdtcmr7dtneRi5Q?usp=sharing
+
+| File | Content |
+|---|---|
+| 1-rbac-matrix.mov | alice, bob, carol, dave, SP-initiated and IdP-initiated login |
+| 2-assertion-tests.mov | tampered, unsigned and expired assertions |
+| 3-idp-changes.mov | disabled user and role change |
