@@ -13,3 +13,13 @@
 | Secrets | Local .env files, git-ignored | Secrets manager |
 | Test users | Simple test passwords | Real users from a directory, strong password policy |
 | Dependencies | Docker images and Python packages pinned loosely | Pin versions, scan images, patch regularly |
+
+## Assumptions
+
+- The IdP is authentik, run locally with Docker Compose; the sample app is a Flask app using python3-saml.
+- NameID is the user's email address, because it is unique per user and readable in logs. A persistent identifier would be better for production.
+- Roles are carried in the `role` attribute and come from authentik group membership (app-admin, app-editor, app-viewer). Users in no group get no role and no access.
+- Self-signed certificates are acceptable for this local demo, as the assignment allows.
+- Test users (alice, bob, carol, dave) use simple demo passwords and no real company data.
+- Local logout is acceptable; Single Logout is a bonus and is not implemented.
+- The recordings are hosted outside git because of their size (about 1 GB).
