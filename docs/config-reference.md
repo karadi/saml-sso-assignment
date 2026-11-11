@@ -47,3 +47,13 @@ Users in none of these groups (dave) do not see the tile and cannot start a logi
 ## Why NameID = email
 Unique per user, readable in logs and in the debug page, and the same value the IdP already stores.
 Trade-off: if an email address changes, the identifier changes. A persistent identifier avoids that and is the better choice for production.
+
+## Certificate expiry dates
+
+| Certificate | Subject | Expires (GMT) |
+|---|---|---|
+| Sample app HTTPS cert (`sample-app/certs/server.crt`) | CN=localhost | 7 Nov 2027, 12:12:14 |
+| IdP SAML signing cert (authentik Self-signed Certificate) | CN=authentik Self-signed Certificate | 7 Nov 2027, 09:24:18 |
+
+Both certificates are self-signed and must be rotated before these dates.
+The sample app uses the IdP signing certificate to verify assertion signatures. After rotating it, re-download the IdP metadata into `sample-app/idp/idp_metadata.xml` and restart the app with `docker compose restart sample-app`.
