@@ -41,3 +41,15 @@ https://drive.google.com/drive/folders/15OWkLsbwV3ptZ5bn4Kdtcmr7dtneRi5Q?usp=sha
 | 1-rbac-matrix.mov | alice, bob, carol and dave against the access matrix, including direct admin URL access |
 | 2-assertion-tests.mov | Assertion validation: tampered and expired assertions |
 | 3-idp-changes.mov | IdP-side changes: disabled user and role change taking effect on next login |
+
+## Recordings
+
+The screen recordings are about 1 GB in total, so they are hosted on Google Drive instead of git:
+
+https://drive.google.com/drive/folders/15OWkLsbwV3ptZ5bn4Kdtcmr7dtneRi5Q?usp=sharing
+
+| File | Covers |
+|---|---|
+| 1-rbac-matrix.mov | alice, bob, carol and dave against the access matrix, including direct admin URL access |
+| 2-assertion-tests.mov | Assertion validation: tampered and expired assertions |
+| 3-idp-changes.mov | IdP-side changes: disabled user and role change taking effect on next login |
